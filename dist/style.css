@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#scroller {
+  background: red;
+  width: 50%;
+  height: 600px;
+  overflow-y: scroll;
+}
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+#inner {
+  height: 5000px;
+}
+#dial {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+}
